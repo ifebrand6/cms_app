@@ -1,0 +1,32 @@
+<%= error_messages_for(@section) %>
+ <table>
+    	<tr>
+    		<th><%= f.label(:name, "Name") %></th>
+    		<td><%= f.text_field(:name) %></td>
+    	</tr>
+    	<tr>
+    		<th><%= f.label(:position) %></th>
+    		<td><%= f.number_field(:position) %></td>
+    	</tr>
+    	<tr>
+    		<th><%= f.label(:visible) %></th>
+    		<td><%= f.check_box(:visible) %></td>
+    	</tr>
+    	<tr>
+    		<th><%= f.label(:content_type) %></th>
+            <td>
+    		<td><%= f.radio_button(:content_type, 'text' ) %> Text
+            <td><%= f.radio_button(:content_type, 'HTML' ) %> HTML
+            </td>
+            </td>
+    	</tr>
+    	<tr>
+    		<th><%= f.label(:content) %></th>
+    		<td><%= f.text_field(:content) %></td>
+    	</tr>
+    	<tr>
+    		<th>Page</th>
+    		<td><%= f.select :page_id, options_for_select(Page.all.collect{|s| [s.name, s.id]}) %></td>
+    	</tr>
+
+    </table>

@@ -1,0 +1,13 @@
+<% page_title = "update account" %>
+ <%= link_to("<< Back to index", {:action =>'index'}, :class => 'back-link') %>
+
+<div class="form">
+ 	<h2>update Account</h2>
+ 	<%= form_for(:admin, :url => {:action => 'update',:id => @admin.id}) do |f| %>
+ 	<%= render(:partial => "form", :locals => {:f => f}) %>
+
+ 	<div class="form-buttons">
+ 		<%= submit_tag("Update info" )%>
+ 	</div>
+ 	<% end %>
+ 	 </div>

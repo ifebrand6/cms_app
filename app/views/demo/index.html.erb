@@ -1,0 +1,8 @@
+<h1>Demo#index</h1>
+<p>Hello world!</p>
+<%= link_to('hello page 2', {:action => 'hello'}) %> </br>
+
+<%= link_to('hello page with para', {:action => 'hello',:id => 20, :page => 5}) %>
+<%= link_to('Roar', '#', :onclick => ":jsRoar('Javascript'); return true;") %>
+
+<%= javascript_tag("jsRoar('Rails');") %> 

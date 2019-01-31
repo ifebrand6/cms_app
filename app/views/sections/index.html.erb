@@ -1,0 +1,39 @@
+	<% @page_title = "Sections"%>
+     <div class="header">
+
+
+     <h2 class="title">section</h2>
+ </div>
+ <%= link_to("<< Back to index", {:controller => 'pages', :action => 'index',:subject_id => @page.subject_id}, :class => 'back-link') %>
+                                <%= link_to("Add New section ",{:action => 'new',:page_id => @page.id}, :class => 'action new') %>
+                                
+	 <table class="listing" summary= "section list">
+                                
+                                    <tr class="header">
+                                        <th>&nbsp;</th>
+                                        <th>Page</th>
+                                        <th>section</th>
+                                    	<th>Visible</th>
+                                    	<th>Content type</th>
+                                    	<th>Position</th>
+                                    	<th>Action</th>
+                                    
+                                    </tr>
+                                    <% @sections.each do |section| %>
+                                
+                                        <tr><td></td>
+                                        	<td><%= section.page_id %></td>
+                                        	<td><%= section.name %></td>
+                                        	<td class="center"><%= status_tag(section.visible) %></td>
+                                           	<td class="center"><%= section.content_type%></td>
+                                        	<td class="center"><%= section.position%></td>
+                                            <td class="action">
+	<%= link_to( "Show",{:action => 'show',:id => section.id,:page_id => @page.id}, :class => 'action edit' )%>
+	<%= link_to "Edit",{:action => 'edit',:id => section.id,:page_id => @page.id}, :class => 'action edit' %>
+	<%= link_to "Delete", {:action => 'delete',:id => section.id,:page_id => @page.id}, :class => 'action delete' %></td>
+                                        </tr>
+                                       
+                                         <% end %>
+                                </table>
+                                </div>
+                                   

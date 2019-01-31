@@ -1,0 +1,14 @@
+ <%= link_to("<< Back to index", {:action =>'index'}, :class => 'back-link') %>
+
+<div class="user delete">
+ 	<h2>Erase a user</h2>
+ 	<%= form_for(:user, :url => {:action => 'destroy',:id => @admin.id}) do |f| %>
+ 	<p>Quit telling stories that touch</p>
+ 	<p class="reference-name"><%= @admin.username %></p>
+
+ 
+ 	<div class="form-buttons">
+ 		<%= submit_tag("remove your account" )%>
+ 	</div>
+ 	<% end %>
+</div>

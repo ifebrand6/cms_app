@@ -1,0 +1,68 @@
+<% @page_title = "Create a subject"%>
+<%= link_to("<< Back to home page",{:action => 'index'}, :class => 'back link') %>
+
+	 <div class="header">
+    <h2 class="title">Create Subject</h2>
+</div>
+<div>
+	<%= form_for(:subject, :url => {:action => 'create'}) do |f| %>
+   <%= render(:partial => "form", :locals => {:f => f}) %>
+</div>
+<br/>
+    <div> 
+      <%= submit_tag("Create Subject") %>
+    	
+   <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                            	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

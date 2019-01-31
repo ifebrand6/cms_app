@@ -1,0 +1,29 @@
+#content { padding-left: 100px; padding-right: 100px;}
+#content h2 {width: 100%; text-align: center;}
+
+.login form { margin: 100px 250px;}
+.menu .identity { text-align: center;}
+.menu ul { margin: 3em 250px; list-style: none;}
+.menu ul li { margin-bottom: 1em;}
+
+a{ text-decoration: :none;}
+a:hover { text-decoration: underline;}
+
+a.action { float: right; padding: 2px 5px; margin: 0 0 1em 1em;
+background: #94b26f; color: #ffffff; border: 1px solid #ffffff; text-decoration: none; font-size: 0.8em; text-align: center;}
+a.action:hover {background: #b6d491;}
+
+.odd { background: #e5ce69;}
+.even { background: none;}
+
+span.status { display: block; width: 10px; height: 10px; margin: 0.25em auto; padding: 0; border: 1px solid #000000;}
+      span.status.true { background: green; color: green;}
+      span.status.false { background: red; color: red;}
+
+.fieldWithErrors {}
+.fieldWithErrors  label {color: #aa0000;}
+.fieldWithErrors input {}
+#errorExplanation {width: 400px; padding: 0; margin: 0 auto 1.5em; border: 1px solid #aa0000;background-color: #ffffff; font-size: 12px;}
+#errorExplanation p {color: #333333; margin: 0; padding: 3px 0.5em;}
+#errorExplanation ul {margin-top: 0;}
+#errorExplanation ul li {list-style: square;}

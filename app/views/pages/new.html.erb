@@ -1,0 +1,67 @@
+<%= link_to("<< Back to index", {:action =>'index', :subject_id => @subject.id}, :class => 'back-link') %>
+
+	 <div class="header">
+    <h2 class="title">Create New Page</h2>
+</div>
+<div>
+	<%= form_for(:page, :url => {:action => 'create',:subject_id => @subject.id}) do |f| %>
+   <%= render(:partial => "form", :locals => {:f => f}) %>
+</div>
+<br/>
+    <div> 
+      <%= submit_tag("Create Page") %>
+    	
+   <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                            	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

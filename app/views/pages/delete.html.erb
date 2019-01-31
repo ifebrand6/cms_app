@@ -1,0 +1,67 @@
+<% @page_title = "Delete this Page"%>
+<%= link_to("<< Back to home page",{:action => 'index',:subject_id => @subject.id}, :class => 'back link') %>
+
+	 <div class="header">
+    <h2 class="title">Delete Page</h2>
+</div>
+<div>
+	<%= form_for(:page, :url => {:action => 'destroy', :id => @page.id, :subject_id => @subject.id}) do |f| %>
+    <table>
+    	<p>ARE YOU SURE YOU WANT TO PERMANABTLY DELETE THIS PAGE</p>
+    	<p><%= @page.name %> </p>
+      <%= submit_tag("delete page") %>
+    	
+   <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                            	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

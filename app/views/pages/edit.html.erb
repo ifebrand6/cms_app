@@ -1,0 +1,68 @@
+<% @page_title = "Update this Page"%>
+<%= link_to("<< Back to home page",{:subject_id => @subject.id,:action => 'index', }, :class => 'back link') %>
+
+	 <div class="header">
+    <h2 class="title">Update page</h2>
+</div>
+<div>
+	<%= form_for(:page, :url => {:action => 'update', :id => @page.id, :subject_id => @subject.id}) do |f| %>
+   <%= render(:partial => "form", :locals => {:f => f}) %>
+</div>
+<br/>
+    <div> 
+      <%= submit_tag("Update page") %>
+    	
+   <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                            	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

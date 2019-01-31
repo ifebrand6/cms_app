@@ -1,0 +1,2 @@
+class AlterUser < ApplicationRecord
+end

@@ -1,0 +1,17 @@
+<h1>Demo#hello</h1>
+<p>hello page</p>
+<% target = "world" %>
+<%= "hello #{target}" %>
+
+<% @array.each do |n| %>
+<%= n %> </br>
+<% end %>
+<a href="/demo/index">index</a> </br>
+<%= link_to('index', {:action => 'index'}) %>
+</br>
+ID: <%= params[:id] %>
+</br>
+PAGE: <%= params['page']%> </br>
+Next page <%= @page + 1 %>
+</br>
+<%= params.inspect %>  scope :invisible, lambda { where(:visible => false)}scope :invisible, lambda { where(:visible => false)}scope :invisible, lambda { where(:visible => false)}

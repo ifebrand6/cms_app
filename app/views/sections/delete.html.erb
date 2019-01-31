@@ -1,0 +1,67 @@
+<% @page_title = "Delete this Section"%>
+<%= link_to("<< Back to home section",{:action => 'index',:page_id => @page.id}, :class => 'back link') %>
+
+	 <div class="header">
+    <h2 class="title">Delete section</h2>
+</div>
+<div>
+	<%= form_for(:section, :url => {:action => 'destroy', :id => @section.id}) do |f| %>
+    <table>
+    	<p>ARE YOU SURE YOU WANT TO PERMANABTLY DELETE THIS section</p>
+    	<p><%= @section.name %> </p>
+      <%= submit_tag("delete section") %>
+    	
+   <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                            	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

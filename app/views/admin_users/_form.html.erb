@@ -1,0 +1,30 @@
+<%= error_messages_for(@admin) %>
+<table summary="Section form fill">
+ 	<tr>
+ 		<th><%= f.label(:username, "Username") %></th>
+ 		
+ 		<td><%= f.text_field(:username) %></td>
+ 	  </tr>
+ 	  <tr>
+ 		<th><%= f.label(:first_name, "First Name") %></th>
+ 		
+ 		<td><%= f.text_field(:first_name) %></td>
+ 	  </tr>
+ 	  <tr>
+ 		<th><%= f.label(:last_name, "Surname") %></th>
+ 		
+ 		<td><%= f.text_field(:last_name) %></td>
+ 	  </tr>
+ 	  <tr>
+ 		<th><%= f.label(:email, "Email") %></th>
+ 		
+ 		<td><%= f.text_field(:email) %></td>
+ 	  </tr>
+ 	  <tr>
+ 		<th><%= f.label(:password, "Password") %></th>
+ 		
+ 		<td><%= f.password_field(:password) %></td>
+ 	  </tr>
+ 	  
+ 	     	  	
+ 	 	</table>

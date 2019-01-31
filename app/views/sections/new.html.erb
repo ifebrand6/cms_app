@@ -1,0 +1,69 @@
+<% @page_title = " Create a Section"%>
+<%= link_to("<< Back to home page",{:action => 'index',:page_id => @page.id}, :class => 'back link') %>
+
+	 <div class="header">
+    <h2 class="title">Create New Sections</h2>
+</div>
+<div>
+	<%= form_for(:section, :url => {:action => 'create',:page_id => @page.id}) do |f| %>
+    <%= render(:partial => "form", :locals => {:f => f}) %>
+
+</div>
+<br/>
+    <div> 
+      <%= submit_tag("Create Page") %>
+    	
+   <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                            	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

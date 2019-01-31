@@ -1,0 +1,27 @@
+<% @page_title = "Page detail"%>
+ <%= link_to("<< Back to index", {:action =>'index', :subject_id => @subject.id}, :class => 'back-link') %>
+
+ <div class="subjects show">
+ 	<h2>Show Page</h2>
+ 	<table sumarry="subject detail view">
+ 		<tr>
+ 			<th>Name</th>
+ 			<td><%= @page.name %></td>
+ 		</tr>
+ 		<tr>
+ 			<th>Position</th>
+ 			<td><%= @page.position %></td>
+ 		</tr>
+ 		<tr>
+ 			<th>Visible</th>
+ 			<td><%= @page.visible ? 'Yes!' : 'Not quite' %></td>
+ 		</tr>
+ 		<tr>
+ 			<th>Created</th>
+ 			<td><%= @page.created_at %></td>
+ 		</tr>
+ 		<tr>
+ 			<th>Upadate</th>
+ 			<td><%= @page.updated_at %></td>
+ 		</tr>
+ 	</table>

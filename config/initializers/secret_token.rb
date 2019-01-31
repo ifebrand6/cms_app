@@ -1,0 +1,1 @@
+SimpleCms::Application.config.secret_key_base = '60f6cab737c0a704bb645f44652de0599ab0576f3803c632a34841b2ddf4a91cfa6225fd9f50bffd08da00d709937d0e08f0348f95c3cd2baa06a90478111ae3'
