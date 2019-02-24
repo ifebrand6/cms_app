@@ -20,4 +20,17 @@ class DemoController < ApplicationController
   def escape_output
                              
   end
+  def make_error
+    render(:text => "test")
+    # render(:text => @something.upcase)
+    # render(text => "1" + 1)
+  end
+  def logging
+    logger.debug("This is debug")
+    logger.info("this is info")
+    logger.warn("this is warn")
+    logger.error("this is error")
+    logger.fatal("this is fatal")
+    render(:text => 'k')    
+  end
 end

@@ -1,0 +1,16 @@
+<% subjects ||= [] %>
+<ul>
+<% subjects.each do |subject| %>
+<li><%= subject.name %>
+	<ul class="nav">
+		<% subject.pages.visible.sorted.each do |page|%>
+		<li class="current"><%= link_to(page.name, :action => 'show', :permalink =>
+		page.permalink) %>
+		</li> 
+		<% end%>
+	</ul>
+</li>
+<%end%>
+</ul>
+<br>
+<br>
